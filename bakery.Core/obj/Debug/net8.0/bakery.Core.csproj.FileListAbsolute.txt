@@ -1,0 +1,11 @@
+C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.Core\bin\Debug\net8.0\bakery.Core.deps.json
+C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.Core\bin\Debug\net8.0\bakery.Core.dll
+C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.Core\bin\Debug\net8.0\bakery.Core.pdb
+C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.Core\obj\Debug\net8.0\bakery.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.Core\obj\Debug\net8.0\bakery.Core.AssemblyInfoInputs.cache
+C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.Core\obj\Debug\net8.0\bakery.Core.AssemblyInfo.cs
+C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.Core\obj\Debug\net8.0\bakery.Core.csproj.CoreCompileInputs.cache
+C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.Core\obj\Debug\net8.0\bakery.Core.dll
+C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.Core\obj\Debug\net8.0\refint\bakery.Core.dll
+C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.Core\obj\Debug\net8.0\bakery.Core.pdb
+C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.Core\obj\Debug\net8.0\ref\bakery.Core.dll

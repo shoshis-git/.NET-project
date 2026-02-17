@@ -1,0 +1,15 @@
+C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.Services\bin\Debug\net8.0\bakery.Services.deps.json
+C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.Services\bin\Debug\net8.0\bakery.Services.dll
+C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.Services\bin\Debug\net8.0\bakery.Services.pdb
+C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.Services\bin\Debug\net8.0\bakery.Core.dll
+C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.Services\bin\Debug\net8.0\bakery.Core.pdb
+C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.Services\obj\Debug\net8.0\bakery.Services.csproj.AssemblyReference.cache
+C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.Services\obj\Debug\net8.0\bakery.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.Services\obj\Debug\net8.0\bakery.Services.AssemblyInfoInputs.cache
+C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.Services\obj\Debug\net8.0\bakery.Services.AssemblyInfo.cs
+C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.Services\obj\Debug\net8.0\bakery.Services.csproj.CoreCompileInputs.cache
+C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.Services\obj\Debug\net8.0\bakery.S.42FA1522.Up2Date
+C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.Services\obj\Debug\net8.0\bakery.Services.dll
+C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.Services\obj\Debug\net8.0\refint\bakery.Services.dll
+C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.Services\obj\Debug\net8.0\bakery.Services.pdb
+C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.Services\obj\Debug\net8.0\ref\bakery.Services.dll
