@@ -12,21 +12,37 @@ namespace bakery.Services
 {
     public class OrderService:IOrdersService
     {
-        private readonly IOrderRepository _ordersRepository;
+        private readonly IRepositoryManager _repoManager;
 
-        public OrderService(IOrderRepository ordersRepository)
+        public OrderService(IRepositoryManager repoManager)
         {
-            _ordersRepository = ordersRepository;
+            _repoManager = repoManager;
         }
-        public List<Orders> GetAll() => _ordersRepository.GetList();
+        public List<Orders> GetAll() => _repoManager.Orders.GetList();
 
-        public Orders GetById(int id) =>_ordersRepository.GetById(id);
-        public void Add(Orders order)=>_ordersRepository.Add(order);
-        public void Update(int id, Orders order)=>_ordersRepository.Update(id,order);
+        public Orders GetById(int id) =>_repoManager.Orders.GetById(id);
+        public void Add(Orders order)
+        {
+            _repoManager.Orders.Add(order);
+            _repoManager.Save();
+        }
+        public void Update(int id, Orders order) 
+        { 
+            _repoManager.Orders.Update(id, order);
+            _repoManager.Save();
+        }
 
-        public void Delete(int id)=>_ordersRepository.Delete(id);
-        public void UpdateStatus(int id, string status)=>_ordersRepository.UpdateStatus(id,status);
-        public List<Orders> GetByCustomer(int customerId) =>_ordersRepository.GetByCustomer(customerId);
+        public void Delete(int id) 
+        { 
+            _repoManager.Orders.Delete(id); 
+            _repoManager.Save();
+        }
+        public void UpdateStatus(int id, string status) 
+        {
+            _repoManager.Orders.UpdateStatus(id, status);
+             _repoManager.Save();
+        }
+        public List<Orders> GetByCustomer(int customerId) =>_repoManager.Orders.GetByCustomer(customerId);
 
     }
 }

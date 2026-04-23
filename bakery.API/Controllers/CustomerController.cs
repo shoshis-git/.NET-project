@@ -51,7 +51,7 @@ namespace bakery.API.Controllers
            _customerService.Update(id, c);
             return Ok("The update is success");
         }
-
+   
 
         // DELETE api/<CustomersController>/5
         [HttpDelete("{id}")]

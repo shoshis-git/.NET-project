@@ -1,0 +1,482 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{907B64EA-7586-4985-87EF-9B5ECF80C8B8}|bakery.Services\\bakery.Services.csproj|c:\\users\\user1\\documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.net\\bakery\\bakery.services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{907B64EA-7586-4985-87EF-9B5ECF80C8B8}|bakery.Services\\bakery.Services.csproj|solutionrelative:bakery.services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{907B64EA-7586-4985-87EF-9B5ECF80C8B8}|bakery.Services\\bakery.Services.csproj|c:\\users\\user1\\documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.net\\bakery\\bakery.services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{907B64EA-7586-4985-87EF-9B5ECF80C8B8}|bakery.Services\\bakery.Services.csproj|solutionrelative:bakery.services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{907B64EA-7586-4985-87EF-9B5ECF80C8B8}|bakery.Services\\bakery.Services.csproj|c:\\users\\user1\\documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.net\\bakery\\bakery.services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{907B64EA-7586-4985-87EF-9B5ECF80C8B8}|bakery.Services\\bakery.Services.csproj|solutionrelative:bakery.services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9AB3618-F60B-4775-8D08-CFF0B9EEE5F9}|bakery.Data\\bakery.Data.csproj|c:\\users\\user1\\documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.net\\bakery\\bakery.data\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9AB3618-F60B-4775-8D08-CFF0B9EEE5F9}|bakery.Data\\bakery.Data.csproj|solutionrelative:bakery.data\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9AB3618-F60B-4775-8D08-CFF0B9EEE5F9}|bakery.Data\\bakery.Data.csproj|c:\\users\\user1\\documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.net\\bakery\\bakery.data\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9AB3618-F60B-4775-8D08-CFF0B9EEE5F9}|bakery.Data\\bakery.Data.csproj|solutionrelative:bakery.data\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EADC3D85-064C-4A45-A23D-1B90A7A51455}|bakery.Core\\bakery.Core.csproj|c:\\users\\user1\\documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.net\\bakery\\bakery.core\\repository\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EADC3D85-064C-4A45-A23D-1B90A7A51455}|bakery.Core\\bakery.Core.csproj|solutionrelative:bakery.core\\repository\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9AB3618-F60B-4775-8D08-CFF0B9EEE5F9}|bakery.Data\\bakery.Data.csproj|c:\\users\\user1\\documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.net\\bakery\\bakery.data\\repositories\\repositorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9AB3618-F60B-4775-8D08-CFF0B9EEE5F9}|bakery.Data\\bakery.Data.csproj|solutionrelative:bakery.data\\repositories\\repositorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED4150EF-82CC-4F17-8E89-AB60FABF4D04}|bakery.API\\bakery.API.csproj|c:\\users\\user1\\documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.net\\bakery\\bakery.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED4150EF-82CC-4F17-8E89-AB60FABF4D04}|bakery.API\\bakery.API.csproj|solutionrelative:bakery.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9AB3618-F60B-4775-8D08-CFF0B9EEE5F9}|bakery.Data\\bakery.Data.csproj|c:\\users\\user1\\documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.net\\bakery\\bakery.data\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9AB3618-F60B-4775-8D08-CFF0B9EEE5F9}|bakery.Data\\bakery.Data.csproj|solutionrelative:bakery.data\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EADC3D85-064C-4A45-A23D-1B90A7A51455}|bakery.Core\\bakery.Core.csproj|c:\\users\\user1\\documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.net\\bakery\\bakery.core\\repository\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EADC3D85-064C-4A45-A23D-1B90A7A51455}|bakery.Core\\bakery.Core.csproj|solutionrelative:bakery.core\\repository\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9AB3618-F60B-4775-8D08-CFF0B9EEE5F9}|bakery.Data\\bakery.Data.csproj|c:\\users\\user1\\documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.net\\bakery\\bakery.data\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9AB3618-F60B-4775-8D08-CFF0B9EEE5F9}|bakery.Data\\bakery.Data.csproj|solutionrelative:bakery.data\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EADC3D85-064C-4A45-A23D-1B90A7A51455}|bakery.Core\\bakery.Core.csproj|c:\\users\\user1\\documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.net\\bakery\\bakery.core\\repository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EADC3D85-064C-4A45-A23D-1B90A7A51455}|bakery.Core\\bakery.Core.csproj|solutionrelative:bakery.core\\repository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EADC3D85-064C-4A45-A23D-1B90A7A51455}|bakery.Core\\bakery.Core.csproj|c:\\users\\user1\\documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.net\\bakery\\bakery.core\\repository\\irepositorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EADC3D85-064C-4A45-A23D-1B90A7A51455}|bakery.Core\\bakery.Core.csproj|solutionrelative:bakery.core\\repository\\irepositorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9AB3618-F60B-4775-8D08-CFF0B9EEE5F9}|bakery.Data\\bakery.Data.csproj|c:\\users\\user1\\documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.net\\bakery\\bakery.data\\bakery.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D9AB3618-F60B-4775-8D08-CFF0B9EEE5F9}|bakery.Data\\bakery.Data.csproj|solutionrelative:bakery.data\\bakery.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EADC3D85-064C-4A45-A23D-1B90A7A51455}|bakery.Core\\bakery.Core.csproj|c:\\users\\user1\\documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.net\\bakery\\bakery.core\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EADC3D85-064C-4A45-A23D-1B90A7A51455}|bakery.Core\\bakery.Core.csproj|solutionrelative:bakery.core\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EADC3D85-064C-4A45-A23D-1B90A7A51455}|bakery.Core\\bakery.Core.csproj|c:\\users\\user1\\documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.net\\bakery\\bakery.core\\entities\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EADC3D85-064C-4A45-A23D-1B90A7A51455}|bakery.Core\\bakery.Core.csproj|solutionrelative:bakery.core\\entities\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EADC3D85-064C-4A45-A23D-1B90A7A51455}|bakery.Core\\bakery.Core.csproj|c:\\users\\user1\\documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.net\\bakery\\bakery.core\\entities\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EADC3D85-064C-4A45-A23D-1B90A7A51455}|bakery.Core\\bakery.Core.csproj|solutionrelative:bakery.core\\entities\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9AB3618-F60B-4775-8D08-CFF0B9EEE5F9}|bakery.Data\\bakery.Data.csproj|c:\\users\\user1\\documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.net\\bakery\\bakery.data\\bakery.data.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{D9AB3618-F60B-4775-8D08-CFF0B9EEE5F9}|bakery.Data\\bakery.Data.csproj|solutionrelative:bakery.data\\bakery.data.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED4150EF-82CC-4F17-8E89-AB60FABF4D04}|bakery.API\\bakery.API.csproj|c:\\users\\user1\\documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.net\\bakery\\bakery.api\\bakery.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{ED4150EF-82CC-4F17-8E89-AB60FABF4D04}|bakery.API\\bakery.API.csproj|solutionrelative:bakery.api\\bakery.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EADC3D85-064C-4A45-A23D-1B90A7A51455}|bakery.Core\\bakery.Core.csproj|c:\\users\\user1\\documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.net\\bakery\\bakery.core\\bakery.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{EADC3D85-064C-4A45-A23D-1B90A7A51455}|bakery.Core\\bakery.Core.csproj|solutionrelative:bakery.core\\bakery.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED4150EF-82CC-4F17-8E89-AB60FABF4D04}|bakery.API\\bakery.API.csproj|c:\\users\\user1\\documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.net\\bakery\\bakery.api\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED4150EF-82CC-4F17-8E89-AB60FABF4D04}|bakery.API\\bakery.API.csproj|solutionrelative:bakery.api\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EADC3D85-064C-4A45-A23D-1B90A7A51455}|bakery.Core\\bakery.Core.csproj|c:\\users\\user1\\documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.net\\bakery\\bakery.core\\service\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EADC3D85-064C-4A45-A23D-1B90A7A51455}|bakery.Core\\bakery.Core.csproj|solutionrelative:bakery.core\\service\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EADC3D85-064C-4A45-A23D-1B90A7A51455}|bakery.Core\\bakery.Core.csproj|c:\\users\\user1\\documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.net\\bakery\\bakery.core\\service\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EADC3D85-064C-4A45-A23D-1B90A7A51455}|bakery.Core\\bakery.Core.csproj|solutionrelative:bakery.core\\service\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED4150EF-82CC-4F17-8E89-AB60FABF4D04}|bakery.API\\bakery.API.csproj|c:\\users\\user1\\documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.net\\bakery\\bakery.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED4150EF-82CC-4F17-8E89-AB60FABF4D04}|bakery.API\\bakery.API.csproj|solutionrelative:bakery.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EADC3D85-064C-4A45-A23D-1B90A7A51455}|bakery.Core\\bakery.Core.csproj|c:\\users\\user1\\documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.net\\bakery\\bakery.core\\repository\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EADC3D85-064C-4A45-A23D-1B90A7A51455}|bakery.Core\\bakery.Core.csproj|solutionrelative:bakery.core\\repository\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED4150EF-82CC-4F17-8E89-AB60FABF4D04}|bakery.API\\bakery.API.csproj|c:\\users\\user1\\documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.net\\bakery\\bakery.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED4150EF-82CC-4F17-8E89-AB60FABF4D04}|bakery.API\\bakery.API.csproj|solutionrelative:bakery.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EADC3D85-064C-4A45-A23D-1B90A7A51455}|bakery.Core\\bakery.Core.csproj|c:\\users\\user1\\documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.net\\bakery\\bakery.core\\service\\iordersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EADC3D85-064C-4A45-A23D-1B90A7A51455}|bakery.Core\\bakery.Core.csproj|solutionrelative:bakery.core\\service\\iordersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{907B64EA-7586-4985-87EF-9B5ECF80C8B8}|bakery.Services\\bakery.Services.csproj|c:\\users\\user1\\documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.net\\bakery\\bakery.services\\bakery.services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{907B64EA-7586-4985-87EF-9B5ECF80C8B8}|bakery.Services\\bakery.Services.csproj|solutionrelative:bakery.services\\bakery.services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CustomerService.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Services\\CustomerService.cs",
+              "RelativeDocumentMoniker": "bakery.Services\\CustomerService.cs",
+              "ToolTip": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Services\\CustomerService.cs*",
+              "RelativeToolTip": "bakery.Services\\CustomerService.cs*",
+              "ViewState": "AgIAABYAAAAAAAAAAAA8wCgAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T16:29:21.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Services\\OrderService.cs",
+              "RelativeDocumentMoniker": "bakery.Services\\OrderService.cs",
+              "ToolTip": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Services\\OrderService.cs",
+              "RelativeToolTip": "bakery.Services\\OrderService.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAswCUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T15:38:18.826Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "bakery.Services\\ProductService.cs",
+              "ToolTip": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Services\\ProductService.cs",
+              "RelativeToolTip": "bakery.Services\\ProductService.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAowCgAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T17:02:05.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Data\\Repositories\\CustomerRepository.cs",
+              "RelativeDocumentMoniker": "bakery.Data\\Repositories\\CustomerRepository.cs",
+              "ToolTip": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Data\\Repositories\\CustomerRepository.cs",
+              "RelativeToolTip": "bakery.Data\\Repositories\\CustomerRepository.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAkwBkAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T16:33:26.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Data\\Repositories\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "bakery.Data\\Repositories\\ProductRepository.cs",
+              "ToolTip": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Data\\Repositories\\ProductRepository.cs",
+              "RelativeToolTip": "bakery.Data\\Repositories\\ProductRepository.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAYwBkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T16:56:14.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ICustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Core\\Repository\\ICustomerRepository.cs",
+              "RelativeDocumentMoniker": "bakery.Core\\Repository\\ICustomerRepository.cs",
+              "ToolTip": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Core\\Repository\\ICustomerRepository.cs",
+              "RelativeToolTip": "bakery.Core\\Repository\\ICustomerRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAowA4AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T16:35:04.887Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RepositoryManager.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Data\\Repositories\\RepositoryManager.cs",
+              "RelativeDocumentMoniker": "bakery.Data\\Repositories\\RepositoryManager.cs",
+              "ToolTip": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Data\\Repositories\\RepositoryManager.cs",
+              "RelativeToolTip": "bakery.Data\\Repositories\\RepositoryManager.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAApwBkAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T17:12:14.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IOrderRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Core\\Repository\\IOrderRepository.cs",
+              "RelativeDocumentMoniker": "bakery.Core\\Repository\\IOrderRepository.cs",
+              "ToolTip": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Core\\Repository\\IOrderRepository.cs",
+              "RelativeToolTip": "bakery.Core\\Repository\\IOrderRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAApwA0AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T15:37:44.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Core\\Repository\\IRepository.cs",
+              "RelativeDocumentMoniker": "bakery.Core\\Repository\\IRepository.cs",
+              "ToolTip": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Core\\Repository\\IRepository.cs",
+              "RelativeToolTip": "bakery.Core\\Repository\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T17:03:27.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.API\\Program.cs",
+              "RelativeDocumentMoniker": "bakery.API\\Program.cs",
+              "ToolTip": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.API\\Program.cs",
+              "RelativeToolTip": "bakery.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T17:10:55.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OrderRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Data\\Repositories\\OrderRepository.cs",
+              "RelativeDocumentMoniker": "bakery.Data\\Repositories\\OrderRepository.cs",
+              "ToolTip": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Data\\Repositories\\OrderRepository.cs",
+              "RelativeToolTip": "bakery.Data\\Repositories\\OrderRepository.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAA2wAoAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T15:43:27.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Data\\Repositories\\Repository.cs",
+              "RelativeDocumentMoniker": "bakery.Data\\Repositories\\Repository.cs",
+              "ToolTip": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Data\\Repositories\\Repository.cs",
+              "RelativeToolTip": "bakery.Data\\Repositories\\Repository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T17:05:30.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IRepositoryManager.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Core\\Repository\\IRepositoryManager.cs",
+              "RelativeDocumentMoniker": "bakery.Core\\Repository\\IRepositoryManager.cs",
+              "ToolTip": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Core\\Repository\\IRepositoryManager.cs",
+              "RelativeToolTip": "bakery.Core\\Repository\\IRepositoryManager.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T17:10:16.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Core\\Entities\\Customer.cs",
+              "RelativeDocumentMoniker": "bakery.Core\\Entities\\Customer.cs",
+              "ToolTip": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Core\\Entities\\Customer.cs",
+              "RelativeToolTip": "bakery.Core\\Entities\\Customer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T15:19:14.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Products.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Core\\Entities\\Products.cs",
+              "RelativeDocumentMoniker": "bakery.Core\\Entities\\Products.cs",
+              "ToolTip": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Core\\Entities\\Products.cs",
+              "RelativeToolTip": "bakery.Core\\Entities\\Products.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T15:20:45.277Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "bakery.Data.csproj",
+              "DocumentMoniker": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Data\\bakery.Data.csproj",
+              "RelativeDocumentMoniker": "bakery.Data\\bakery.Data.csproj",
+              "ToolTip": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Data\\bakery.Data.csproj",
+              "RelativeToolTip": "bakery.Data\\bakery.Data.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-29T15:26:50.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Orders.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Core\\Entities\\Orders.cs",
+              "RelativeDocumentMoniker": "bakery.Core\\Entities\\Orders.cs",
+              "ToolTip": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Core\\Entities\\Orders.cs",
+              "RelativeToolTip": "bakery.Core\\Entities\\Orders.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T15:19:48.983Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "bakery.Data",
+              "DocumentMoniker": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Data\\bakery.Data.csproj",
+              "RelativeDocumentMoniker": "bakery.Data\\bakery.Data.csproj",
+              "ToolTip": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Data\\bakery.Data.csproj",
+              "RelativeToolTip": "bakery.Data\\bakery.Data.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-31T19:58:32.09Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "bakery.API.csproj",
+              "DocumentMoniker": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.API\\bakery.API.csproj",
+              "RelativeDocumentMoniker": "bakery.API\\bakery.API.csproj",
+              "ToolTip": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.API\\bakery.API.csproj",
+              "RelativeToolTip": "bakery.API\\bakery.API.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-31T20:01:09.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.API\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "bakery.API\\Controllers\\CustomerController.cs",
+              "ToolTip": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.API\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "bakery.API\\Controllers\\CustomerController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T15:13:44.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "bakery.Core.csproj",
+              "DocumentMoniker": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Core\\bakery.Core.csproj",
+              "RelativeDocumentMoniker": "bakery.Core\\bakery.Core.csproj",
+              "ToolTip": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Core\\bakery.Core.csproj",
+              "RelativeToolTip": "bakery.Core\\bakery.Core.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-29T15:18:33.177Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Core\\Repository\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "bakery.Core\\Repository\\IProductRepository.cs",
+              "ToolTip": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Core\\Repository\\IProductRepository.cs",
+              "RelativeToolTip": "bakery.Core\\Repository\\IProductRepository.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAIBJwAkAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T16:58:48.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Core\\Service\\IProductService.cs",
+              "RelativeDocumentMoniker": "bakery.Core\\Service\\IProductService.cs",
+              "ToolTip": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Core\\Service\\IProductService.cs",
+              "RelativeToolTip": "bakery.Core\\Service\\IProductService.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAA3wAkAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T17:24:43.985Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ICustomerService.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Core\\Service\\ICustomerService.cs",
+              "RelativeDocumentMoniker": "bakery.Core\\Service\\ICustomerService.cs",
+              "ToolTip": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Core\\Service\\ICustomerService.cs",
+              "RelativeToolTip": "bakery.Core\\Service\\ICustomerService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T17:27:26.437Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "IOrdersService.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Core\\Service\\IOrdersService.cs",
+              "RelativeDocumentMoniker": "bakery.Core\\Service\\IOrdersService.cs",
+              "ToolTip": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Core\\Service\\IOrdersService.cs",
+              "RelativeToolTip": "bakery.Core\\Service\\IOrdersService.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAIBJwAkAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T17:22:14.756Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "bakery.Services.csproj",
+              "DocumentMoniker": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Services\\bakery.Services.csproj",
+              "RelativeDocumentMoniker": "bakery.Services\\bakery.Services.csproj",
+              "ToolTip": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.Services\\bakery.Services.csproj",
+              "RelativeToolTip": "bakery.Services\\bakery.Services.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-29T15:37:50.442Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.API\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "bakery.API\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.API\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "bakery.API\\Controllers\\ProductsController.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAIBJwBAAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T15:16:57.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.API\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "bakery.API\\Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\user1\\Documents\\\u05EA\u05DB\u05E0\u05D5\u05EA\\.NET\\bakery\\bakery.API\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "bakery.API\\Controllers\\OrdersController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T15:15:43.031Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

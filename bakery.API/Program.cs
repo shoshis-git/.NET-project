@@ -20,6 +20,8 @@ builder.Services.AddScoped<IOrdersService, OrderService>();
 builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IOrderRepository,OrdersRepository>();
+builder.Services.AddScoped<IRepositoryManager, RepositoryManager>();
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 builder.Services.AddDbContext<DataContext>();
 var app = builder.Build();
 
@@ -37,3 +39,4 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+

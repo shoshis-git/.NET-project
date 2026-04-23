@@ -24,11 +24,6 @@ C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.API\obj\Debug\net8.0\bake
 C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.API\obj\Debug\net8.0\bakery.API.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.API\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.API\obj\Debug\net8.0\staticwebassets.development.json
-C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.API\obj\Debug\net8.0\staticwebassets\msbuild.bakery.API.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.API\obj\Debug\net8.0\staticwebassets\msbuild.build.bakery.API.props
-C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.bakery.API.props
-C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.bakery.API.props
-C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.API\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.API\obj\Debug\net8.0\scopedcss\bundle\bakery.API.styles.css
 C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.API\obj\Debug\net8.0\bakery.API.csproj.Up2Date
 C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.API\obj\Debug\net8.0\bakery.API.dll
@@ -77,7 +72,6 @@ C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.API\bin\Debug\net8.0\Syst
 C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.API\bin\Debug\net8.0\System.Composition.TypedParts.dll
 C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.API\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
 C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.API\bin\Debug\net8.0\System.Drawing.Common.dll
-C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.API\bin\Debug\net8.0\System.Formats.Asn1.dll
 C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.API\bin\Debug\net8.0\System.Memory.Data.dll
 C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.API\bin\Debug\net8.0\System.Runtime.Caching.dll
@@ -148,3 +142,12 @@ C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.API\bin\Debug\net8.0\runt
 C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.API\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.API\obj\Debug\net8.0\bakery.API.sourcelink.json
+C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.API\bin\Debug\net8.0\bakery.API.staticwebassets.endpoints.json
+C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.API\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.API\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.API\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.API\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.API\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

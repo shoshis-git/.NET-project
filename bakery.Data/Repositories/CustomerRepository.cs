@@ -8,27 +8,23 @@ using System.Threading.Tasks;
 
 namespace bakery.Data.Repositories
 {
-    public class CustomerRepository: ICustomerRepository
+    public class CustomerRepository: Repository<Customer>, ICustomerRepository
     {
-        private readonly DataContext _context;
-
-        public CustomerRepository(DataContext context)
+      
+        public CustomerRepository(DataContext context):base(context)
         {
-            _context = context;
+           
         }
 
-        public List<Customer> GetAll() => _context.Customers.ToList();
+        public List<Customer> GetAll() => _dbSet.ToList();
 
         public Customer GetById(int id) =>
-            _context.Customers.FirstOrDefault(c => c.Id == id);
+            _dbSet.FirstOrDefault(c => c.Id == id);
 
         public void Add(Customer customer)
         {
-            customer.Id = _context.Customers.ToList().Count == 0
-                ? 1
-                : _context.Customers.Max(c => c.Id) + 1;
-
-            _context.Customers.Add(customer);
+           
+            _dbSet.Add(customer);
         }
 
         public void Update(int id, Customer customer)
@@ -44,11 +40,11 @@ namespace bakery.Data.Repositories
         {
             var customer = GetById(id);
             if (customer != null)
-                _context.Customers.Remove(customer);
+                _dbSet.Remove(customer);
         }
         public List<Orders> GetOrdersForCustomer(int id)
         {
-            var customer = _context.Customers.FirstOrDefault(c => c.Id == id);
+            var customer = _context.Orders.FirstOrDefault(c => c.Id == id);
 
             var ordersForCustomer = _context.Orders
                 .Where(o => o.CustomerId == id)

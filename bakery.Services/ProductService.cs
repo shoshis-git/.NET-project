@@ -11,35 +11,38 @@ namespace bakery.Services
 {
     public class ProductService:IProductService
     {
-        private readonly IProductRepository _productRepository;
+        private readonly IRepositoryManager _repoManager;
 
-        public ProductService(IProductRepository productRepository)
+        public ProductService(IRepositoryManager repoManager)
         {
-            _productRepository = productRepository;
+            _repoManager = repoManager;
         }
 
-        public List<Products> GetAll() => _productRepository.GetAll();
+        public List<Products> GetAll() => _repoManager.Products.GetAll();
 
         public Products GetById(int id) =>
-            _productRepository.GetById(id);
+            _repoManager.Products.GetById(id);
 
         public void Add(Products product)
         {
-            _productRepository.Add(product);
+            _repoManager.Products.Add(product);
+            _repoManager.Save();
         }
 
         public void Update(int id, Products product)
         {
-           _productRepository.Update(id, product);
+           _repoManager.Products.Update(id, product);
+            _repoManager.Save();
         }
 
         public void Delete(int id)
         {
-            _productRepository.Delete(id);
+            _repoManager.Products.Delete(id);
+                _repoManager.Save();
         }
 
         public List<Products> GetByCategory(string category) =>
-            _productRepository.GetByCategory(category);
+            _repoManager.Products.GetByCategory(category);
     }
 }
 

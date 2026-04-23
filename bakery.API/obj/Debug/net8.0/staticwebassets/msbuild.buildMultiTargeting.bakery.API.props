@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\bakery.API.props" />
-</Project>

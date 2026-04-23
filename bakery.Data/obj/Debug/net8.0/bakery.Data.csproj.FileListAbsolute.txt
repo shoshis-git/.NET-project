@@ -15,3 +15,4 @@ C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.Data\obj\Debug\net8.0\bak
 C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.Data\obj\Debug\net8.0\ref\bakery.Data.dll
 C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.Data\bin\Debug\net8.0\bakery.Data.runtimeconfig.json
 C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.Data\obj\Debug\net8.0\bakery.Data.genruntimeconfig.cache
+C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.Data\obj\Debug\net8.0\bakery.Data.sourcelink.json

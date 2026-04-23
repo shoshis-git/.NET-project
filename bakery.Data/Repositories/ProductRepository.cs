@@ -8,27 +8,24 @@ using System.Threading.Tasks;
 
 namespace bakery.Data.Repositories
 {
-    public class ProductRepository: IProductRepository
+    public class ProductRepository: Repository<Products>, IProductRepository
     {
-        private readonly DataContext _context;
+       
 
-        public ProductRepository(DataContext context)
+        public ProductRepository(DataContext context):base(context)
         {
-            _context = context;
+            
         }
 
-        public List<Products> GetAll() => _context.Products.ToList();
+        public List<Products> GetAll() => _dbSet.ToList();
 
         public Products GetById(int id) =>
-            _context.Products.FirstOrDefault(p => p.Id == id);
+            _dbSet.FirstOrDefault(p => p.Id == id);
 
         public void Add(Products product)
         {
-            product.Id = _context.Products.ToList().Count == 0
-                ? 1
-                : _context.Products.Max(p => p.Id) + 1;
 
-            _context.Products.Add(product);
+            _dbSet.Add(product);
         }
 
         public void Update(int id, Products product)
@@ -45,7 +42,7 @@ namespace bakery.Data.Repositories
         {
             var product = GetById(id);
             if (product != null)
-                _context.Products.Remove(product);
+                _dbSet.Remove(product);
         }
 
         public List<Products> GetByCategory(string category) =>

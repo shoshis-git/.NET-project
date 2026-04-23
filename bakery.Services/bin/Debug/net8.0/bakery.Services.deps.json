@@ -16,7 +16,10 @@
       },
       "bakery.Core/1.0.0": {
         "runtime": {
-          "bakery.Core.dll": {}
+          "bakery.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

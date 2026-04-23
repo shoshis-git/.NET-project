@@ -8,24 +8,23 @@ using System.Threading.Tasks;
 
 namespace bakery.Data.Repositories
 {
-    public class OrdersRepository:IOrderRepository
+    public class OrdersRepository:Repository<Orders>,IOrderRepository
     {
-        private readonly DataContext _context;
+        
 
-        public OrdersRepository(DataContext context)
+        public OrdersRepository(DataContext context):base(context)
         {
-            _context = context;
+           
         }
 
-        public List<Orders> GetList() => _context.Orders.ToList();
+        public List<Orders> GetList() => _dbSet.ToList();
 
         public Orders GetById(int id) =>
-            _context.Orders.FirstOrDefault(o => o.Id == id);
+            _dbSet.FirstOrDefault(o => o.Id == id);
 
         public void Add(Orders order)
         {
-            order.Id = _context.Orders.ToList().Count == 0 ? 1 : _context.Orders.Max(o => o.Id) + 1;
-            _context.Orders.Add(order);
+            _dbSet.Add(order);
         }
 
         public void Update(int id, Orders order)
@@ -43,7 +42,7 @@ namespace bakery.Data.Repositories
         {
             var order = GetById(id);
             if (order != null)
-                _context.Orders.Remove(order);
+                _dbSet.Remove(order);
         }
 
         public void UpdateStatus(int id, string status)

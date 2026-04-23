@@ -13,3 +13,4 @@ C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.Services\obj\Debug\net8.0
 C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.Services\obj\Debug\net8.0\refint\bakery.Services.dll
 C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.Services\obj\Debug\net8.0\bakery.Services.pdb
 C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.Services\obj\Debug\net8.0\ref\bakery.Services.dll
+C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.Services\obj\Debug\net8.0\bakery.Services.sourcelink.json

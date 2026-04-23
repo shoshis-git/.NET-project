@@ -11,33 +11,36 @@ namespace bakery.Services
 {
     public class CustomerService:ICustomerService
     {
-        private readonly ICustomerRepository _customerRepository;
+        private readonly IRepositoryManager _repoManager;
 
-        public CustomerService(ICustomerRepository customerRepository)
+        public CustomerService(IRepositoryManager repoManager)
         {
-            _customerRepository = customerRepository;
+            _repoManager = repoManager;
         }
 
-        public List<Customer> GetAll() => _customerRepository.GetAll();
+        public List<Customer> GetAll() => _repoManager.Customers.GetAll();
 
         public Customer GetById(int id) =>
-           _customerRepository.GetById(id);
+           _repoManager.Customers.GetById(id);
 
         public void Add(Customer customer)
         {
-           _customerRepository.Add(customer);
+           _repoManager.Customers.Add(customer);
+            _repoManager.Save();
         }
 
         public void Update(int id, Customer customer)
         {
-           _customerRepository.Update(id, customer);
+           _repoManager.Customers.Update(id, customer);
+           _repoManager.Save();
         }
 
         public void Delete(int id)
         {
-           _customerRepository.Delete(id);
+           _repoManager.Customers.Delete(id);
+            _repoManager.Save();
         }
-        public List<Orders> GetOrdersForCustomer(int id)=>_customerRepository.GetOrdersForCustomer(id);
+        public List<Orders> GetOrdersForCustomer(int id)=>_repoManager.Customers.GetOrdersForCustomer(id);
         
             
         

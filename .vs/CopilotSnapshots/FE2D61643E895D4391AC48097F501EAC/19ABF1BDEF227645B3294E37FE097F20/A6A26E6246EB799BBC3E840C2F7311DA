@@ -1,0 +1,59 @@
+﻿using bakery.Core.Entities;
+using bakery.Core.Repository;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace bakery.Data.Repositories
+{
+    public class OrdersRepository:Repository<Orders>,IOrderRepository
+    {
+        
+
+        public OrdersRepository(DataContext context):base(context)
+        {
+           
+        }
+
+        public List<Orders> GetList() => _dbSet.ToList();
+
+        public Orders GetById(int id) =>
+            _dbSet.FirstOrDefault(o => o.Id == id);
+
+        public void Add(Orders order)
+        {
+            order.Id = _dbSet.ToList().Count == 0 ? 1 : _dbSet.Max(o => o.Id) + 1;
+            _dbSet.Add(order);
+        }
+
+        public void Update(int id, Orders order)
+        {
+            var existing = GetById(id);
+            if (existing == null) return;
+
+            existing.ProductId = order.ProductId;
+            existing.CustomerId = order.CustomerId;
+            existing.ProductName = order.ProductName;
+            existing.Status = order.Status;
+        }
+
+        public void Delete(int id)
+        {
+            var order = GetById(id);
+            if (order != null)
+                _dbSet.Remove(order);
+        }
+
+        public void UpdateStatus(int id, string status)
+        {
+            var order = GetById(id);
+            if (order != null)
+                order.Status = status;
+        }
+
+        public List<Orders> GetByCustomer(int customerId) =>
+            _context.Orders.Where(o => o.CustomerId == customerId).ToList();
+    }
+}
