@@ -5,14 +5,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace bakery.Data.Repositories
 {
-    public class ProductRepository: Repository<Products>, IProductRepository
+    public class ProductsRepository: Repository<Products>, IProductRepository
     {
        
 
-        public ProductRepository(DataContext context):base(context)
+        public ProductsRepository(DataContext context):base(context)
         {
             
         }
@@ -28,14 +29,14 @@ namespace bakery.Data.Repositories
             _dbSet.Add(product);
         }
 
-        public void Update(int id, Products product)
+        public void Update(int id, Products Product)
         {
             var existing = GetById(id);
             if (existing == null) return;
 
-            existing.Name = product.Name;
-            existing.Category = product.Category;
-            existing.Price = product.Price;
+            existing.Name = Product.Name;
+           
+            existing.Price = Product.Price;
         }
 
         public void Delete(int id)
@@ -45,10 +46,7 @@ namespace bakery.Data.Repositories
                 _dbSet.Remove(product);
         }
 
-        public List<Products> GetByCategory(string category) =>
-            _context.Products
-                .Where(p => p.Category == category)
-                .ToList();
+      
     }
 }
 

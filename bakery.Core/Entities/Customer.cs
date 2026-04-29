@@ -12,5 +12,6 @@ namespace bakery.Core.Entities
         public string Name { get; set; }
         public string Email { get; set; }
         public string Phone { get; set; }
+       public List<Orders> Orders { get; set; }
     }
 }

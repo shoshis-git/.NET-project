@@ -10,3 +10,4 @@ C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.Core\obj\Debug\net8.0\ref
 C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.Core\obj\Debug\net8.0\bakery.Core.pdb
 C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.Core\obj\Debug\net8.0\ref\bakery.Core.dll
 C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.Core\obj\Debug\net8.0\bakery.Core.sourcelink.json
+C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.Core\obj\Debug\net8.0\bakery.Core.csproj.AssemblyReference.cache

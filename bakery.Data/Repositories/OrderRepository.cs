@@ -1,5 +1,6 @@
 ﻿using bakery.Core.Entities;
 using bakery.Core.Repository;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,10 +18,13 @@ namespace bakery.Data.Repositories
            
         }
 
-        public List<Orders> GetList() => _dbSet.ToList();
+        public List<Orders> GetList() => _dbSet.Include(o=>o.Product).Include(o=>o.Customer).ToList();
 
         public Orders GetById(int id) =>
-            _dbSet.FirstOrDefault(o => o.Id == id);
+            _dbSet
+            .Include(o=>o.Customer)
+            .Include(o=>o.Product)
+            .FirstOrDefault(o => o.Id == id);
 
         public void Add(Orders order)
         {
@@ -34,7 +38,6 @@ namespace bakery.Data.Repositories
 
             existing.ProductId = order.ProductId;
             existing.CustomerId = order.CustomerId;
-            existing.ProductName = order.ProductName;
             existing.Status = order.Status;
         }
 
@@ -45,7 +48,7 @@ namespace bakery.Data.Repositories
                 _dbSet.Remove(order);
         }
 
-        public void UpdateStatus(int id, string status)
+        public void UpdateStatus(int id, EnumStatuses status)
         {
             var order = GetById(id);
             if (order != null)
@@ -53,6 +56,6 @@ namespace bakery.Data.Repositories
         }
 
         public List<Orders> GetByCustomer(int customerId) =>
-            _context.Orders.Where(o => o.CustomerId == customerId).ToList();
+            _context.Orders.Where(o => o.CustomerId == customerId).Include(o=>o.Customer).Include(o=>o.Product).ToList();
     }
 }

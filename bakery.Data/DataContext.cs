@@ -13,10 +13,17 @@ namespace bakery.Data
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Products> Products { get; set; }
         public DbSet<Orders> Orders { get; set; }
+       
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=sample_db");
+        }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Orders>()
+                .Property(o => o.Status)
+                .HasConversion<string>();
         }
     }
 }

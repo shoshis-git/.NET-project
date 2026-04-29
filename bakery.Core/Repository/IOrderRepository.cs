@@ -14,7 +14,7 @@ namespace bakery.Core.Repository
         public void Add(Orders order);
         public void Update(int id, Orders order);
         public void Delete(int id);
-        public void UpdateStatus(int id, string status);
+        public void UpdateStatus(int id, EnumStatuses status);
         public List<Orders> GetByCustomer(int customerId);
     }
 }

@@ -2,6 +2,9 @@
 using bakery.Core.Entities;
 using Microsoft.AspNetCore.Mvc;
 using bakery.Core.Service;
+using bakery.API.Models;
+using bakery.Core.DTOs;
+using AutoMapper;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -12,43 +15,59 @@ namespace bakery.API.Controllers
     public class CustomersController : ControllerBase
     {
         private readonly ICustomerService _customerService;
+        private readonly IMapper _mapper;
 
-
-        public CustomersController(ICustomerService customerService)
+        public CustomersController(ICustomerService customerService, IMapper mapper)
         {
             _customerService = customerService;
+            _mapper = mapper;
         }
 
         // GET: api/<CustomersController>
         [HttpGet]
         public ActionResult Get()
         {
-            return Ok(_customerService.GetAll());
+            var list = _customerService.GetAll();
+            var listDTO = _mapper.Map<List<CustomerDto>>(list);
+            return Ok(listDTO);
         }
 
         // GET api/<CustomersController>/5
         [HttpGet("{id}")]
         public ActionResult Get(int id)
         {
+
             var customer = _customerService.GetById(id);
             if (customer == null) return NotFound();
-            return Ok(customer);
+            var customerDTO = _mapper.Map<CustomerDto>(customer);
+            return Ok(customerDTO);
         }
 
         // POST api/<CustomersController>
         [HttpPost]
-        public ActionResult Post([FromBody] Customer c)
+        public ActionResult Post([FromBody] CustomerPostModel c)
         {
-           
-            _customerService.Add(c);
+           var customer = new Customer
+            {
+                Name = c.Name,
+                Email = c.Email,
+                Phone = c.Phone
+            };
+            _customerService.Add(customer);
             return Ok();
         }
 
         // PUT api/<CustomersController>/5
         [HttpPut("{id}")]
-        public ActionResult Put(int id, [FromBody] Customer c)
+        public ActionResult Put(int id, [FromBody] CustomerPostModel c)
         {
-           _customerService.Update(id, c);
+            var customer=new Customer
+            {
+                Name = c.Name,
+                Email = c.Email,
+                Phone = c.Phone
+            };
+            _customerService.Update(id, customer);
             return Ok("The update is success");
         }
    
@@ -65,9 +84,9 @@ namespace bakery.API.Controllers
         [HttpGet("{id}/orders")]
         public ActionResult GetOrdersForCustomer(int id)
         {
-          
-
-            return Ok(_customerService.GetOrdersForCustomer(id));
+            var orders = _customerService.GetOrdersForCustomer(id);
+            var orderDTO = _mapper.Map<List<OrderDTO>>(orders);
+            return Ok(orderDTO);
         }
     }
 }

@@ -11,9 +11,9 @@ namespace bakery.Core.Service
     {
         List<Products> GetAll();
         Products GetById(int id);
-        void Add(Products product);
-        void Update(int id, Products product);
+        void Add(   Products product);
+        void Update(int id,Products product);
         void Delete(int id);
-        List<Products> GetByCategory(string category);
+      
     }
 }

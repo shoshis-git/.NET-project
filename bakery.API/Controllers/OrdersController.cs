@@ -1,4 +1,7 @@
-﻿using bakery.Core.Entities;
+﻿using AutoMapper;
+using bakery.API.Models;
+using bakery.Core.DTOs;
+using bakery.Core.Entities;
 using bakery.Core.Service;
 using bakery.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -13,18 +16,21 @@ namespace bakery.API.Controllers
     public class OrdersController : ControllerBase
     {
         private readonly IOrdersService _service;
-        public static int nextId = 1;
+        private readonly IMapper _mapper;
 
-        public OrdersController(IOrdersService service)
+        public OrdersController(IOrdersService service, IMapper mapper)
         {
             _service = service;
+            _mapper = mapper;
         }
 
         // GET: api/<OrdersController>
         [HttpGet]
         public ActionResult Get()
         {
-            return Ok(_service.GetAll());
+            var list = _service.GetAll();
+            var listDTO = _mapper.Map<List<OrderDTO>>(list);
+            return Ok(listDTO);
         }
 
         // GET api/<OrdersController>/5
@@ -33,22 +39,35 @@ namespace bakery.API.Controllers
         {
             var order = _service.GetById(id);
             if (order == null) return NotFound();
-            return Ok(order);
+            var orderDTO = _mapper.Map<OrderDTO>(order);
+            return Ok(orderDTO);
         }
 
         // POST api/<OrdersController>
         [HttpPost]
-        public ActionResult Post([FromBody] Orders o)
+        public ActionResult Post([FromBody] OrdersPostModel o)
         {
-           _service.Add(o);
-            return Ok(o);
+            var order = new Orders
+            {
+                ProductId = o.ProductId,
+                CustomerId = o.CustomerId,
+                Status=EnumStatuses.Invating
+            };
+            _service.Add(order);
+            return Ok();
         }
 
         // PUT api/<OrdersController>/5
         [HttpPut("{id}")]
-        public ActionResult Put(int id, [FromBody] Orders o)
+        public ActionResult Put(int id, [FromBody] OrdersPutModel o)
         {
-           _service.Update(id, o);
+            var order = new Orders
+            {
+                ProductId = o.ProductId,
+                CustomerId = o.CustomerId,
+                Status = o.Status
+            };
+            _service.Update(id, order);
             return Ok("The updated succefull");
         }
 
@@ -62,7 +81,7 @@ namespace bakery.API.Controllers
             return Ok("The deleted success");
         }
         [HttpPut("{id}/status")]
-        public ActionResult UpdateStatus(int id, [FromBody] string status)
+        public ActionResult UpdateStatus(int id, [FromBody] EnumStatuses status)
         {
            _service.UpdateStatus(id, status);
             return Ok("The status updated");

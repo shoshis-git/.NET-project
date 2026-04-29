@@ -1,4 +1,7 @@
-﻿using bakery.Core.Entities;
+﻿using AutoMapper;
+using bakery.API.Models;
+using bakery.Core.DTOs;
+using bakery.Core.Entities;
 using bakery.Core.Service;
 using bakery.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -12,18 +15,21 @@ namespace bakery.API.Controllers
     public class ProductsController : ControllerBase
     {
         private readonly IProductService _productService;
+        private readonly IMapper _mapper;
 
-
-        public ProductsController(IProductService productService)
+        public ProductsController(IProductService productService, IMapper mapper)
         {
             _productService = productService;
+            _mapper = mapper;
         }
 
         // GET: api/<ProductsController>
         [HttpGet]
         public ActionResult Get()
         {
-            return Ok(_productService.GetAll());
+            var list= _productService.GetAll();
+            var listDTO = _mapper.Map<List<ProductDTO>>(list);
+            return Ok(listDTO);
         }
 
         // GET api/<ProductsController>/5
@@ -32,22 +38,33 @@ namespace bakery.API.Controllers
         {
             var product = _productService.GetById(id);
             if (product == null) return NotFound();
-            return Ok(product);
+            var productDTO = _mapper.Map<ProductDTO>(product);
+            return Ok(productDTO);
         }
 
         // POST api/<ProductsController>
         [HttpPost]
-        public ActionResult Post([FromBody] Products p)
+        public ActionResult Post([FromBody] ProductsPostModel p)
         {
-           _productService.Add(p);
+            var product = new Products
+            {
+                Name = p.Name,
+                Price = p.Price
+            };
+            _productService.Add(product);
             return Ok();
         }
 
         // PUT api/<ProductsController>/5
         [HttpPut("{id}")]
-        public ActionResult Put(int id, [FromBody] Products p)
+        public ActionResult Put(int id, [FromBody] ProductsPostModel p)
         {
-           _productService.Update(id, p);
+            var product =new Products
+            {
+                Name = p.Name,
+                Price = p.Price
+            };
+            _productService.Update(id, product);
             return Ok("The updated is succesfully");
         }
 
@@ -61,12 +78,8 @@ namespace bakery.API.Controllers
             _productService.Delete(id);
             return Ok("The deleted succeed");
         }
-        [HttpGet("category/{category}")]
-        public ActionResult GetByCategory(string category)
-        {
-           
-            return Ok(_productService.GetByCategory(category));
-        }
+       
+   
 
     }
 }

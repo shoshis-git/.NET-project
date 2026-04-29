@@ -19,7 +19,7 @@
     "Parameters": [
       {
         "Name": "c",
-        "Type": "bakery.Core.Entities.Customer",
+        "Type": "bakery.API.Models.CustomerPostModel",
         "IsRequired": true
       }
     ],
@@ -56,7 +56,7 @@
       },
       {
         "Name": "c",
-        "Type": "bakery.Core.Entities.Customer",
+        "Type": "bakery.API.Models.CustomerPostModel",
         "IsRequired": true
       }
     ],
@@ -114,7 +114,7 @@
     "Parameters": [
       {
         "Name": "o",
-        "Type": "bakery.Core.Entities.Orders",
+        "Type": "bakery.API.Models.OrdersPostModel",
         "IsRequired": true
       }
     ],
@@ -151,7 +151,7 @@
       },
       {
         "Name": "o",
-        "Type": "bakery.Core.Entities.Orders",
+        "Type": "bakery.API.Models.OrdersPutModel",
         "IsRequired": true
       }
     ],
@@ -214,7 +214,7 @@
     "Parameters": [
       {
         "Name": "p",
-        "Type": "bakery.Core.Entities.Products",
+        "Type": "bakery.API.Models.ProductsPostModel",
         "IsRequired": true
       }
     ],
@@ -251,7 +251,7 @@
       },
       {
         "Name": "p",
-        "Type": "bakery.Core.Entities.Products",
+        "Type": "bakery.API.Models.ProductsPostModel",
         "IsRequired": true
       }
     ],
@@ -268,22 +268,6 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "bakery.API.Controllers.ProductsController",
-    "Method": "GetByCategory",
-    "RelativePath": "api/Products/category/{category}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "category",
-        "Type": "System.String",
         "IsRequired": true
       }
     ],

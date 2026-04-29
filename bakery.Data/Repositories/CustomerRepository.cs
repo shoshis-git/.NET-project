@@ -1,5 +1,6 @@
 ﻿using bakery.Core.Entities;
 using bakery.Core.Repository;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,12 +15,12 @@ namespace bakery.Data.Repositories
         public CustomerRepository(DataContext context):base(context)
         {
            
-        }
+        }   
 
-        public List<Customer> GetAll() => _dbSet.ToList();
+        public List<Customer> GetAll() => _dbSet.Include(c=>c.Orders).ToList();
 
         public Customer GetById(int id) =>
-            _dbSet.FirstOrDefault(c => c.Id == id);
+            _dbSet.Include(c=>c.Orders).FirstOrDefault(c => c.Id == id);
 
         public void Add(Customer customer)
         {
@@ -44,12 +45,7 @@ namespace bakery.Data.Repositories
         }
         public List<Orders> GetOrdersForCustomer(int id)
         {
-            var customer = _context.Orders.FirstOrDefault(c => c.Id == id);
-
-            var ordersForCustomer = _context.Orders
-                .Where(o => o.CustomerId == id)
-                .ToList();
-            return ordersForCustomer;
+            return _context.Orders.Where(o => o.CustomerId == id).Include(o=>o.Customer).Include(o=>o.Product).ToList();
         }
     }
 }

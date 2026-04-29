@@ -41,8 +41,7 @@ namespace bakery.Services
                 _repoManager.Save();
         }
 
-        public List<Products> GetByCategory(string category) =>
-            _repoManager.Products.GetByCategory(category);
+       
     }
 }
 

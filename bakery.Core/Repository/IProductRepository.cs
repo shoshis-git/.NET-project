@@ -14,6 +14,6 @@ namespace bakery.Core.Repository
         public void Add(Products product);
         public void Update(int id, Products product);
         public void Delete(int id);
-        public List<Products> GetByCategory(string category);
+      
     }
 }

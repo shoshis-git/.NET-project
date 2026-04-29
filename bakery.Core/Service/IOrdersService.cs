@@ -14,7 +14,7 @@ namespace bakery.Core.Service
         void Add(Orders order);
         void Update(int id, Orders order);
         void Delete(int id);
-        void UpdateStatus(int id, string status);
+        void UpdateStatus(int id, EnumStatuses status);
         List<Orders> GetByCustomer(int customerId);
     }
 }

@@ -37,7 +37,7 @@ namespace bakery.Services
             _repoManager.Orders.Delete(id); 
             _repoManager.Save();
         }
-        public void UpdateStatus(int id, string status) 
+        public void UpdateStatus(int id, EnumStatuses status) 
         {
             _repoManager.Orders.UpdateStatus(id, status);
              _repoManager.Save();
