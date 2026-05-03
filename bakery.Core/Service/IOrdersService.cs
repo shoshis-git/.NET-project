@@ -9,12 +9,12 @@ namespace bakery.Core.Service
 {
     public interface IOrdersService
     {
-        List<Orders> GetAll();
-        Orders GetById(int id);
-        void Add(Orders order);
-        void Update(int id, Orders order);
-        void Delete(int id);
-        void UpdateStatus(int id, EnumStatuses status);
-        List<Orders> GetByCustomer(int customerId);
+        Task<IEnumerable<Orders>> GetAllAsync();
+        Task<Orders> GetByIdAsync(int id);
+        Task AddAsync(Orders order);
+        Task UpdateAsync(int id, Orders order);
+        Task DeleteAsync(int id);
+        Task UpdateStatusAsync(int id, EnumStatuses status);
+        Task<IEnumerable<Orders>> GetByCustomerAsync(int customerId);
     }
 }

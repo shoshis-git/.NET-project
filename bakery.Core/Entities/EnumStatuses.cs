@@ -1,8 +1,8 @@
 ﻿public enum EnumStatuses
 {
-   Invating,
-    InProgress,
-    Senduig,
-    Completed,
-    Cancelled
+   Invating=1,
+    InProgress=2,
+    Sending=3,
+    Completed=4,
+    Cancelled=5
 }

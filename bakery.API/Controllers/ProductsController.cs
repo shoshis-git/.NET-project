@@ -3,10 +3,9 @@ using bakery.API.Models;
 using bakery.Core.DTOs;
 using bakery.Core.Entities;
 using bakery.Core.Service;
-using bakery.Services;
-using Microsoft.AspNetCore.Mvc;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace bakery.API.Controllers
 {
@@ -25,18 +24,18 @@ namespace bakery.API.Controllers
 
         // GET: api/<ProductsController>
         [HttpGet]
-        public ActionResult Get()
+        public async Task<ActionResult> Get()
         {
-            var list= _productService.GetAll();
+            var list= await _productService.GetAllAsync();
             var listDTO = _mapper.Map<List<ProductDTO>>(list);
             return Ok(listDTO);
         }
 
         // GET api/<ProductsController>/5
         [HttpGet("{id}")]
-        public ActionResult Get(int id)
+        public async Task<ActionResult> Get(int id)
         {
-            var product = _productService.GetById(id);
+            var product = await _productService.GetByIdAsync(id);
             if (product == null) return NotFound();
             var productDTO = _mapper.Map<ProductDTO>(product);
             return Ok(productDTO);
@@ -44,38 +43,38 @@ namespace bakery.API.Controllers
 
         // POST api/<ProductsController>
         [HttpPost]
-        public ActionResult Post([FromBody] ProductsPostModel p)
+        public async Task<ActionResult> Post([FromBody] ProductsPostModel p)
         {
             var product = new Products
             {
                 Name = p.Name,
                 Price = p.Price
             };
-            _productService.Add(product);
+            await _productService.AddAsync(product);
             return Ok();
         }
 
         // PUT api/<ProductsController>/5
         [HttpPut("{id}")]
-        public ActionResult Put(int id, [FromBody] ProductsPostModel p)
+        public async Task<ActionResult> Put(int id, [FromBody] ProductsPostModel p)
         {
             var product =new Products
             {
                 Name = p.Name,
                 Price = p.Price
             };
-            _productService.Update(id, product);
+           await _productService.UpdateAsync(id, product);
             return Ok("The updated is succesfully");
         }
 
         // DELETE api/<ProductsController>/5
         [HttpDelete("{id}")]
-        public ActionResult Delete(int id)
+        public async Task<ActionResult> Delete(int id)
         {
-            var product = _productService.GetById(id);
+            var product = await _productService.GetByIdAsync(id);
             if (product == null) return NotFound();
 
-            _productService.Delete(id);
+            await _productService.DeleteAsync(id);
             return Ok("The deleted succeed");
         }
        

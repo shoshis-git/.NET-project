@@ -18,22 +18,22 @@ namespace bakery.Data.Repositories
            
         }
 
-        public List<Orders> GetList() => _dbSet.Include(o=>o.Product).Include(o=>o.Customer).ToList();
+        public async Task<IEnumerable<Orders>> GetAllAsync() => await _dbSet.Include(o=>o.Product).Include(o=>o.Customer).ToListAsync();
 
-        public Orders GetById(int id) =>
-            _dbSet
+        public async Task<Orders> GetByIdAsync(int id) =>
+            await _dbSet
             .Include(o=>o.Customer)
             .Include(o=>o.Product)
-            .FirstOrDefault(o => o.Id == id);
+            .FirstOrDefaultAsync(o => o.Id == id);
 
         public void Add(Orders order)
         {
             _dbSet.Add(order);
         }
 
-        public void Update(int id, Orders order)
+        public async Task UpdateAsync(int id, Orders order)
         {
-            var existing = GetById(id);
+            var existing = await GetByIdAsync(id);
             if (existing == null) return;
 
             existing.ProductId = order.ProductId;
@@ -41,21 +41,21 @@ namespace bakery.Data.Repositories
             existing.Status = order.Status;
         }
 
-        public void Delete(int id)
+        public async Task DeleteAsync(int id)
         {
-            var order = GetById(id);
+            var order = await GetByIdAsync(id);
             if (order != null)
                 _dbSet.Remove(order);
         }
 
-        public void UpdateStatus(int id, EnumStatuses status)
+        public async Task UpdateStatusAsync(int id, EnumStatuses status)
         {
-            var order = GetById(id);
+            var order =await GetByIdAsync(id);
             if (order != null)
-                order.Status = status;
+                 order.Status = status;
         }
 
-        public List<Orders> GetByCustomer(int customerId) =>
-            _context.Orders.Where(o => o.CustomerId == customerId).Include(o=>o.Customer).Include(o=>o.Product).ToList();
+        public async Task<IEnumerable<Orders>> GetByCustomerAsync(int customerId) =>
+            await _context.Orders.Where(o => o.CustomerId == customerId).Include(o=>o.Customer).Include(o=>o.Product).ToListAsync();
     }
 }

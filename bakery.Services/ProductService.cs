@@ -18,27 +18,27 @@ namespace bakery.Services
             _repoManager = repoManager;
         }
 
-        public List<Products> GetAll() => _repoManager.Products.GetAll();
+        public async Task<IEnumerable<Products>> GetAllAsync() => await _repoManager.Products.GetAllAsync();
 
-        public Products GetById(int id) =>
-            _repoManager.Products.GetById(id);
+        public async Task<Products> GetByIdAsync(int id) =>
+            await _repoManager.Products.GetByIdAsync(id);
 
-        public void Add(Products product)
+        public async Task AddAsync(Products product)
         {
             _repoManager.Products.Add(product);
-            _repoManager.Save();
+            await _repoManager.SaveAsync();
         }
 
-        public void Update(int id, Products product)
+        public async Task UpdateAsync(int id, Products product)
         {
-           _repoManager.Products.Update(id, product);
-            _repoManager.Save();
+           await _repoManager.Products.UpdateAsync(id, product);
+            await _repoManager.SaveAsync();
         }
 
-        public void Delete(int id)
+        public async Task DeleteAsync(int id)
         {
-            _repoManager.Products.Delete(id);
-                _repoManager.Save();
+            await _repoManager.Products.DeleteAsync(id);
+                await _repoManager.SaveAsync();
         }
 
        

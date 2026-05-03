@@ -9,12 +9,12 @@ namespace bakery.Core.Repository
 {
     public interface IOrderRepository
     {
-        public List<Orders> GetList();
-        public Orders GetById(int id);
+        public Task< IEnumerable<Orders>> GetAllAsync();
+        public Task<Orders> GetByIdAsync(int id);
         public void Add(Orders order);
-        public void Update(int id, Orders order);
-        public void Delete(int id);
-        public void UpdateStatus(int id, EnumStatuses status);
-        public List<Orders> GetByCustomer(int customerId);
+        public Task UpdateAsync(int id, Orders order);
+        public Task DeleteAsync(int id);
+        public Task UpdateStatusAsync(int id, EnumStatuses status);
+        public Task<IEnumerable<Orders>> GetByCustomerAsync(int customerId);
     }
 }

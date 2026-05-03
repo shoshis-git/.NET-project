@@ -1,10 +1,11 @@
-﻿using bakery.Services;
+﻿
 using bakery.Core.Entities;
 using Microsoft.AspNetCore.Mvc;
 using bakery.Core.Service;
 using bakery.API.Models;
 using bakery.Core.DTOs;
 using AutoMapper;
+using System.Threading.Tasks;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -25,19 +26,19 @@ namespace bakery.API.Controllers
 
         // GET: api/<CustomersController>
         [HttpGet]
-        public ActionResult Get()
+        public async Task<ActionResult> Get()
         {
-            var list = _customerService.GetAll();
-            var listDTO = _mapper.Map<List<CustomerDto>>(list);
+            var list = await _customerService.GetAllAsync();
+            var listDTO = _mapper.Map<IEnumerable<CustomerDto>>(list);
             return Ok(listDTO);
         }
 
         // GET api/<CustomersController>/5
         [HttpGet("{id}")]
-        public ActionResult Get(int id)
+        public async Task<ActionResult> Get(int id)
         {
 
-            var customer = _customerService.GetById(id);
+            var customer = await _customerService.GetByIdAsync(id);
             if (customer == null) return NotFound();
             var customerDTO = _mapper.Map<CustomerDto>(customer);
             return Ok(customerDTO);
@@ -45,7 +46,7 @@ namespace bakery.API.Controllers
 
         // POST api/<CustomersController>
         [HttpPost]
-        public ActionResult Post([FromBody] CustomerPostModel c)
+        public async Task<ActionResult> Post([FromBody] CustomerPostModel c)
         {
            var customer = new Customer
             {
@@ -53,13 +54,13 @@ namespace bakery.API.Controllers
                 Email = c.Email,
                 Phone = c.Phone
             };
-            _customerService.Add(customer);
+            await _customerService.AddAsync(customer);
             return Ok();
         }
 
         // PUT api/<CustomersController>/5
         [HttpPut("{id}")]
-        public ActionResult Put(int id, [FromBody] CustomerPostModel c)
+        public async Task<ActionResult> Put(int id, [FromBody] CustomerPostModel c)
         {
             var customer=new Customer
             {
@@ -67,24 +68,24 @@ namespace bakery.API.Controllers
                 Email = c.Email,
                 Phone = c.Phone
             };
-            _customerService.Update(id, customer);
+            await _customerService.UpdateAsync(id, customer);
             return Ok("The update is success");
         }
    
 
         // DELETE api/<CustomersController>/5
         [HttpDelete("{id}")]
-        public ActionResult Delete(int id)
+        public async Task<ActionResult> Delete(int id)
         {
-            var customer = _customerService.GetById;
+            var customer = await _customerService.GetByIdAsync(id);
             if (customer == null) return NotFound();
-            _customerService.Delete(id);
+            await _customerService.DeleteAsync(id);
             return Ok("The deleted is succeed");
         }
         [HttpGet("{id}/orders")]
-        public ActionResult GetOrdersForCustomer(int id)
+        public async Task<ActionResult> GetOrdersForCustomer(int id)
         {
-            var orders = _customerService.GetOrdersForCustomer(id);
+            var orders =  await _customerService.GetOrdersForCustomerAsync(id);
             var orderDTO = _mapper.Map<List<OrderDTO>>(orders);
             return Ok(orderDTO);
         }

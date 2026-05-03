@@ -1,5 +1,6 @@
 ﻿using bakery.Core.Entities;
 using bakery.Core.Repository;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,10 +19,10 @@ namespace bakery.Data.Repositories
             
         }
 
-        public List<Products> GetAll() => _dbSet.ToList();
+        public async Task<IEnumerable<Products>> GetAllAsync() => await _dbSet.ToListAsync();
 
-        public Products GetById(int id) =>
-            _dbSet.FirstOrDefault(p => p.Id == id);
+        public async Task<Products> GetByIdAsync(int id) =>
+            await _dbSet.FirstOrDefaultAsync(p => p.Id == id);
 
         public void Add(Products product)
         {
@@ -29,9 +30,9 @@ namespace bakery.Data.Repositories
             _dbSet.Add(product);
         }
 
-        public void Update(int id, Products Product)
+        public async Task UpdateAsync(int id, Products Product)
         {
-            var existing = GetById(id);
+            var existing = await GetByIdAsync(id);
             if (existing == null) return;
 
             existing.Name = Product.Name;
@@ -39,9 +40,9 @@ namespace bakery.Data.Repositories
             existing.Price = Product.Price;
         }
 
-        public void Delete(int id)
+        public async Task DeleteAsync(int id)
         {
-            var product = GetById(id);
+            var product =  await GetByIdAsync(id);
             if (product != null)
                 _dbSet.Remove(product);
         }

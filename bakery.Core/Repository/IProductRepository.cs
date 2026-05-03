@@ -9,11 +9,11 @@ namespace bakery.Core.Repository
 {
     public interface IProductRepository
     {
-        public List<Products> GetAll();
-        public Products GetById(int id);
+        public Task<IEnumerable<Products>> GetAllAsync();
+        public Task<Products> GetByIdAsync(int id);
         public void Add(Products product);
-        public void Update(int id, Products product);
-        public void Delete(int id);
+        public Task UpdateAsync(int id, Products product);
+        public Task DeleteAsync(int id);
       
     }
 }

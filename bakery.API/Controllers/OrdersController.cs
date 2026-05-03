@@ -5,6 +5,7 @@ using bakery.Core.Entities;
 using bakery.Core.Service;
 using bakery.Services;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -26,18 +27,18 @@ namespace bakery.API.Controllers
 
         // GET: api/<OrdersController>
         [HttpGet]
-        public ActionResult Get()
+        public async Task<ActionResult> Get()
         {
-            var list = _service.GetAll();
+            var list = await _service.GetAllAsync();
             var listDTO = _mapper.Map<List<OrderDTO>>(list);
             return Ok(listDTO);
         }
 
         // GET api/<OrdersController>/5
         [HttpGet("{id}")]
-        public ActionResult Get(int id)
+        public async Task<ActionResult> Get(int id)
         {
-            var order = _service.GetById(id);
+            var order =await _service.GetByIdAsync(id);
             if (order == null) return NotFound();
             var orderDTO = _mapper.Map<OrderDTO>(order);
             return Ok(orderDTO);
@@ -45,7 +46,7 @@ namespace bakery.API.Controllers
 
         // POST api/<OrdersController>
         [HttpPost]
-        public ActionResult Post([FromBody] OrdersPostModel o)
+        public async Task<ActionResult> Post([FromBody] OrdersPostModel o)
         {
             var order = new Orders
             {
@@ -53,13 +54,13 @@ namespace bakery.API.Controllers
                 CustomerId = o.CustomerId,
                 Status=EnumStatuses.Invating
             };
-            _service.Add(order);
+            await _service.AddAsync(order);
             return Ok();
         }
 
         // PUT api/<OrdersController>/5
         [HttpPut("{id}")]
-        public ActionResult Put(int id, [FromBody] OrdersPutModel o)
+        public async Task<ActionResult> Put(int id, [FromBody] OrdersPutModel o)
         {
             var order = new Orders
             {
@@ -67,23 +68,23 @@ namespace bakery.API.Controllers
                 CustomerId = o.CustomerId,
                 Status = o.Status
             };
-            _service.Update(id, order);
+            await _service.UpdateAsync(id, order);
             return Ok("The updated succefull");
         }
 
         // DELETE api/<OrdersController>/5
         [HttpDelete("{id}")]
-        public ActionResult Delete(int id)
+        public async Task<ActionResult> Delete(int id)
         {
-            var customer= _service.GetById(id);
+            var customer= await _service.GetByIdAsync(id);
             if(customer == null) return NotFound();
-           _service.Delete(id);
+           await _service.DeleteAsync(id);
             return Ok("The deleted success");
         }
         [HttpPut("{id}/status")]
-        public ActionResult UpdateStatus(int id, [FromBody] EnumStatuses status)
+        public async Task<ActionResult> UpdateStatus(int id, [FromBody] EnumStatuses status)
         {
-           _service.UpdateStatus(id, status);
+          await _service.UpdateStatusAsync(id, status);
             return Ok("The status updated");
         }
     }

@@ -18,31 +18,31 @@ namespace bakery.Services
         {
             _repoManager = repoManager;
         }
-        public List<Orders> GetAll() => _repoManager.Orders.GetList();
+        public async Task<IEnumerable<Orders>> GetAllAsync() => await _repoManager.Orders.GetAllAsync();
 
-        public Orders GetById(int id) =>_repoManager.Orders.GetById(id);
-        public void Add(Orders order)
+        public async Task<Orders> GetByIdAsync(int id) => await _repoManager.Orders.GetByIdAsync(id);
+        public async Task AddAsync(Orders order)
         {
             _repoManager.Orders.Add(order);
-            _repoManager.Save();
+            await _repoManager.SaveAsync();
         }
-        public void Update(int id, Orders order) 
+        public async Task UpdateAsync(int id, Orders order) 
         { 
-            _repoManager.Orders.Update(id, order);
-            _repoManager.Save();
+            await _repoManager.Orders.UpdateAsync(id, order);
+            await _repoManager.SaveAsync();
         }
 
-        public void Delete(int id) 
+        public async Task DeleteAsync(int id) 
         { 
-            _repoManager.Orders.Delete(id); 
-            _repoManager.Save();
+            await _repoManager.Orders.DeleteAsync(id); 
+            await _repoManager.SaveAsync();
         }
-        public void UpdateStatus(int id, EnumStatuses status) 
+        public async Task UpdateStatusAsync(int id, EnumStatuses status) 
         {
-            _repoManager.Orders.UpdateStatus(id, status);
-             _repoManager.Save();
+            await _repoManager.Orders.UpdateStatusAsync(id, status);
+             await _repoManager.SaveAsync();
         }
-        public List<Orders> GetByCustomer(int customerId) =>_repoManager.Orders.GetByCustomer(customerId);
+        public async Task<IEnumerable<Orders>> GetByCustomerAsync(int customerId) => await _repoManager.Orders.GetByCustomerAsync(customerId);
 
     }
 }

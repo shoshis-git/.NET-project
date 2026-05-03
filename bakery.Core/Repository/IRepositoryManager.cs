@@ -11,6 +11,6 @@ namespace bakery.Core.Repository
         ICustomerRepository Customers { get; }
             IOrderRepository Orders { get; }
             IProductRepository Products { get; }
-            void Save();
+            Task SaveAsync();
     }
 }

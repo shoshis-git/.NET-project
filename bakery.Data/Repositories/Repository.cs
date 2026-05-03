@@ -17,13 +17,13 @@ namespace bakery.Data.Repositories
             _context = context;
             _dbSet = context.Set<T>();
         }
-        public  List<T> GetAll()
+        public async  Task<IEnumerable<T>>GetAllAsync()
         {
-            return _dbSet.ToList();
+            return await _dbSet.ToListAsync();
         }
-        public T GetById(int id)
+        public async Task<T> GetByIdAsync(int id)
         {
-            return _dbSet.Find(id);
+            return await _dbSet.FindAsync(id);
         }
         public void Add(T entity)
         {

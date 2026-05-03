@@ -17,10 +17,10 @@ namespace bakery.Data.Repositories
            
         }   
 
-        public List<Customer> GetAll() => _dbSet.Include(c=>c.Orders).ToList();
+        public async Task<IEnumerable<Customer>> GetAllAsync() => await  _dbSet.Include(c=>c.Orders).ToListAsync();
 
-        public Customer GetById(int id) =>
-            _dbSet.Include(c=>c.Orders).FirstOrDefault(c => c.Id == id);
+        public async Task<Customer> GetByIdAsync(int id) =>
+            await _dbSet.Include(c=>c.Orders).FirstOrDefaultAsync(c => c.Id == id);
 
         public void Add(Customer customer)
         {
@@ -28,24 +28,24 @@ namespace bakery.Data.Repositories
             _dbSet.Add(customer);
         }
 
-        public void Update(int id, Customer customer)
+        public async Task UpdateAsync(int id, Customer customer)
         {
-            var existing = GetById(id);
+            var existing = await GetByIdAsync(id);
             if (existing == null) return;
 
             existing.Name = customer.Name;
             existing.Phone = customer.Phone;
         }
 
-        public void Delete(int id)
+        public async Task DeleteAsync(int id)
         {
-            var customer = GetById(id);
+            var customer = await GetByIdAsync(id);
             if (customer != null)
                 _dbSet.Remove(customer);
         }
-        public List<Orders> GetOrdersForCustomer(int id)
+        public async Task<List<Orders>> GetOrdersForCustomerAsync(int id)
         {
-            return _context.Orders.Where(o => o.CustomerId == id).Include(o=>o.Customer).Include(o=>o.Product).ToList();
+            return await _context.Orders.Where(o => o.CustomerId == id).Include(o=>o.Customer).Include(o=>o.Product).ToListAsync();
         }
     }
 }

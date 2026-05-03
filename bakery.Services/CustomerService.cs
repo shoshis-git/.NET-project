@@ -18,29 +18,29 @@ namespace bakery.Services
             _repoManager = repoManager;
         }
 
-        public List<Customer> GetAll() => _repoManager.Customers.GetAll();
+        public async Task<IEnumerable<Customer>> GetAllAsync() => await _repoManager.Customers.GetAllAsync();
 
-        public Customer GetById(int id) =>
-           _repoManager.Customers.GetById(id);
+        public async Task<Customer> GetByIdAsync(int id) =>
+           await _repoManager.Customers.GetByIdAsync(id);
 
-        public void Add(Customer customer)
+        public async Task AddAsync(Customer customer)
         {
            _repoManager.Customers.Add(customer);
-            _repoManager.Save();
+            await _repoManager.SaveAsync();
         }
 
-        public void Update(int id, Customer customer)
+        public async Task UpdateAsync(int id, Customer customer)
         {
-           _repoManager.Customers.Update(id, customer);
-           _repoManager.Save();
+           await _repoManager.Customers.UpdateAsync(id, customer);
+           await _repoManager.SaveAsync();
         }
 
-        public void Delete(int id)
+        public async Task DeleteAsync(int id)
         {
-           _repoManager.Customers.Delete(id);
-            _repoManager.Save();
+           await _repoManager.Customers.DeleteAsync(id);
+            await _repoManager.SaveAsync();
         }
-        public List<Orders> GetOrdersForCustomer(int id)=>_repoManager.Customers.GetOrdersForCustomer(id);
+        public async Task<List<Orders>> GetOrdersForCustomerAsync(int id) => await _repoManager.Customers.GetOrdersForCustomerAsync(id);
         
             
         
