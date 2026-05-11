@@ -1,4 +1,6 @@
+using bakery.API.Middlewares;
 using bakery.Core;
+using bakery.Core.Entities;
 using bakery.Core.Repository;
 using bakery.Core.Service;
 using bakery.Data;
@@ -21,6 +23,7 @@ builder.Services.AddControllers().AddJsonOptions(options =>
     options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
     options.JsonSerializerOptions.WriteIndented = true;
 });
+
 builder.Services.AddScoped<ICustomerService, CustomerService>();
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<IOrdersService, OrderService>();
@@ -43,7 +46,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
-
+app.UseMiddleware<ShabbatMiddleware>();
 app.MapControllers();
 
 app.Run();
