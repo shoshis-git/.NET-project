@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("2e980e95-59b1-4b58-bba0-0f97db13db87")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("bakery.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a5e6848c5799d0999764703acc185cd69169072")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+015d9762c12d64b58d565c83376a8619734e1f7f")]
 [assembly: System.Reflection.AssemblyProductAttribute("bakery.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("bakery.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

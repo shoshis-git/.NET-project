@@ -153,3 +153,5 @@ C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.API\obj\Debug\net8.0\stat
 C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.API\bin\Debug\net8.0\AutoMapper.dll
 C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.API\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.API\bin\Debug\net8.0\appsettings.Production.Development.json
+C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.API\bin\Debug\net8.0\appsettings.Production.json
