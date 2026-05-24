@@ -40,6 +40,7 @@ namespace bakery.Services
            await _repoManager.Customers.DeleteAsync(id);
             await _repoManager.SaveAsync();
         }
+        public async Task<Customer> GetByNameAndEmailAsync(string name,string email) => await _repoManager.Customers.GetByNameAndEmailAsync(name,email);
         public async Task<List<Orders>> GetOrdersForCustomerAsync(int id) => await _repoManager.Customers.GetOrdersForCustomerAsync(id);
         
             

@@ -1,10 +1,11 @@
 ﻿
-using bakery.Core.Entities;
-using Microsoft.AspNetCore.Mvc;
-using bakery.Core.Service;
+using AutoMapper;
 using bakery.API.Models;
 using bakery.Core.DTOs;
-using AutoMapper;
+using bakery.Core.Entities;
+using bakery.Core.Service;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -13,6 +14,7 @@ namespace bakery.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class CustomersController : ControllerBase
     {
         private readonly ICustomerService _customerService;
@@ -46,6 +48,7 @@ namespace bakery.API.Controllers
 
         // POST api/<CustomersController>
         [HttpPost]
+        [AllowAnonymousAttribute]
         public async Task<ActionResult> Post([FromBody] CustomerPostModel c)
         {
            var customer = new Customer

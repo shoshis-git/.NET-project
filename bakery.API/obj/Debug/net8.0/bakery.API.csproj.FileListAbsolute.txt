@@ -155,3 +155,4 @@ C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.API\bin\Debug\net8.0\Auto
 C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.API\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.API\bin\Debug\net8.0\appsettings.Production.Development.json
 C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.API\bin\Debug\net8.0\appsettings.Production.json
+C:\Users\user1\Documents\תכנות\.NET\bakery\bakery.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

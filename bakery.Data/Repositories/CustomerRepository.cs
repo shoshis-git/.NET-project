@@ -43,6 +43,10 @@ namespace bakery.Data.Repositories
             if (customer != null)
                 _dbSet.Remove(customer);
         }
+        public async Task<Customer> GetByNameAndEmailAsync(string name,string email)
+        {
+            return await _dbSet.FirstOrDefaultAsync(u =>u.Name==name && u.Email == email);
+        }
         public async Task<List<Orders>> GetOrdersForCustomerAsync(int id)
         {
             return await _context.Orders.Where(o => o.CustomerId == id).Include(o=>o.Customer).Include(o=>o.Product).ToListAsync();

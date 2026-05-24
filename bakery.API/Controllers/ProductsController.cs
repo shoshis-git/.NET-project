@@ -3,7 +3,7 @@ using bakery.API.Models;
 using bakery.Core.DTOs;
 using bakery.Core.Entities;
 using bakery.Core.Service;
-
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
@@ -11,6 +11,7 @@ namespace bakery.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class ProductsController : ControllerBase
     {
         private readonly IProductService _productService;

@@ -14,6 +14,7 @@ namespace bakery.Core.Service
         Task AddAsync(Customer customer);
         Task UpdateAsync(int id, Customer customer);
         Task DeleteAsync(int id);
+        Task<Customer> GetByNameAndEmailAsync(string name, string email);
         Task<List<Orders>> GetOrdersForCustomerAsync(int id);
     }
 }

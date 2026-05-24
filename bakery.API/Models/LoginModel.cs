@@ -1,0 +1,8 @@
+﻿namespace bakery.API.Models
+{
+    public class LoginModel
+    {
+        public string Name { get; set; }
+        public string Email { get; set; }
+    }
+}
